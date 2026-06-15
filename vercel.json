@@ -1,0 +1,6 @@
+{
+  "public": "build/web",
+  "outputDirectory": "build/web",
+  "cleanUrls": true,
+  "framework": "other"
+}

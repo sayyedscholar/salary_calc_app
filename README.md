@@ -53,6 +53,35 @@ lib/
 - ✅ Linux
 - ✅ Web
 
+## Deployment
+
+### Deploy to Vercel (Web)
+
+Since Vercel doesn't support Flutter builds, you need to build locally first, then deploy the static files.
+
+**Setup Steps:**
+
+1. **Build Flutter Web locally**
+   ```bash
+   flutter build web
+   ```
+
+2. **Commit and push to GitHub** (including the `build/web` folder)
+   ```bash
+   git add .
+   git commit -m "Build Flutter web for Vercel"
+   git push
+   ```
+
+3. **Deploy to Vercel**
+   - Go to [Vercel Dashboard](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+   - Vercel will detect `vercel.json` and serve `build/web` as static files
+   - Your app will be live at `https://your-project.vercel.app`
+
+**Note:** You must rebuild and push whenever you make changes to the app.
+
 ## Getting Help
 
 For more information on Flutter development:
