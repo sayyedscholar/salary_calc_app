@@ -1,6 +1,6 @@
 {
-  "public": "build/web",
   "outputDirectory": "build/web",
-  "cleanUrls": true,
-  "framework": "other"
+  "buildCommand": "",
+  "installCommand": "",
+  "cleanUrls": true
 }
